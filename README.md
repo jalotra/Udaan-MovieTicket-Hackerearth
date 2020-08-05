@@ -1,5 +1,6 @@
 ## Hackearth-Udaan-Movie-Ticket
 
+
 ### Things to keep in mind
 1. Udaan asks the same questions for both Intern and FTE postions.
 2. The problem statement is that you have to complete the functionality of :    
@@ -7,10 +8,10 @@
     b) reserve-seat {screen-name} {row-number} {seats-to-book} <br />
     c) get-unreserved-seats {screen-name} {row-number} <br />
     d) suggest-contiguous-seats {screen-name} {number-of-contiguous-seats} {row-number} {preferred-starting-or-ending-seat-number} <br />
-
+3. Time Allowed : 2 hrs. <br />
 ### FAQ
 Q.) Is this tested enough ? <br />
-A.) No, it's not, I wasn't able to solve the contiguous part and don't exactly think that my implementation is correct. So use your brains etc., <br />this is just a reference implementation that may/maynot work.
+A.) No, it's not, I wasn't able to solve the contiguous part and don't exactly think that my implementation is correct. So use your brains etc., this is just a reference implementation that may/maynot work.
 
 Q.) Is OOPS needed ? <br />
 A.) I think so because they needed good engineering practices to be followed. <br /> 

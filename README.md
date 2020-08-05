@@ -8,8 +8,18 @@
     c) get-unreserved-seats {screen-name} {row-number} <br />
     d) suggest-contiguous-seats {screen-name} {number-of-contiguous-seats} {row-number} {preferred-starting-or-ending-seat-number} <br />
 
+### FAQ
+Q.) Is this tested enough ? <br />
+A.) No, it's not, I wasn't able to solve the contiguous part and don't exactly think that my implementation is correct. So use your brains etc., <br />this is just a reference implementation that may/maynot work.
+
+Q.) Is OOPS needed ? <br />
+A.) I think so because they needed good engineering practices to be followed. <br /> 
+
+
 #### How I performed ?
 Bad Ofcourse, I couldn't complete the contiguous-logic, because normal development is done on some IDE/text-editor but the Hackerearth IDE is fu**ed up, you can't get full-screen, also the question is described vaguely and there is no debugger in the IDE.</br>   
+
+
 
 
 #### Author 

@@ -1,4 +1,4 @@
-## Hackearth-Udaan-Movie-Ticket
+## Hackerearth-Udaan-Movie-Ticket
 
 
 ### Things to keep in mind

@@ -66,10 +66,9 @@ class MovieTicket{
 
             // First check the forward direction
             
-            
             int found = 0; 
             vector<int>result;
-            for(int i = seat_number + 1; i < min(seat_number + number_of_seats, this->total_cols + 1); i++){
+            for(int i = seat_number + 1; i < min(seat_number + number_of_seats, this->total_cols + 1) - 1; i++){
                 if(this->aisle_seats.find(i) != this->aisle_seats.end() || this->matrix[row_number][i]){
                     break;
                 }else{
@@ -79,6 +78,10 @@ class MovieTicket{
             if(!this->matrix[row_number][seat_number]){
                 found += 1;
             }
+            if(!this->matrix[row_number][min(seat_number + number_of_seats - 1, this->total_cols)]){
+                found += 1;
+            }
+            //cout << "forward" << " " << found << endl;
 
             if(found == number_of_seats){
                 for(int i = seat_number; i < min(seat_number + number_of_seats, this->total_cols + 1); i++){
@@ -89,7 +92,7 @@ class MovieTicket{
             
             found = 0;
             // Lets check the backward direction 
-            for(int i = max(1, seat_number - number_of_seats - 1); i < seat_number; i++){
+            for(int i = max(1, seat_number - number_of_seats + 1) + 1; i < seat_number; i++){
                 if(this->aisle_seats.find(i) != this->aisle_seats.end() || this->matrix[row_number][i]){
                     break;
                 }else{
@@ -99,9 +102,13 @@ class MovieTicket{
             if(!this->matrix[row_number][seat_number]){
                 found += 1;
             }
+            if(!this->matrix[row_number][max(1, seat_number - number_of_seats - 1)]){
+                found += 1;
+            }
+            //cout << "backward" << " " << found << endl;
 
             if(found == number_of_seats){
-                for(int i = max(1, seat_number - number_of_seats - 1); i <= seat_number ; i++){
+                for(int i = max(1, seat_number - number_of_seats + 1); i <= seat_number ; i++){
                     result.push_back(i);
                 }
                 return result;

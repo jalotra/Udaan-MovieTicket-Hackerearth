@@ -1,5 +1,13 @@
 ## Hackerearth-Udaan-Movie-Ticket
 
+### Problem Statement
+<b> You have to write the backend logic of a system that is used in Movie Theatres. The functionalities include : </b> <br /> <br /> 
+1. [ ADD SCREEN ] Say you have a screen empty and you want to allot this screen to a new movie. <br /> 
+Params : <br /> 
+a) screen-name or the Name of the Screen. Example : "Avengers- Infinity War". <br /> 
+b) rows : Total rows in the Audi <br /> 
+c) cols : Total cols in the Audi<br /> 
+d) Aisle-Seats : Which seats are to be kept aisle. Example 5, 6 and 12, 13 are aisle seats in every row of the Audi. <br /> 
 
 ### Things to keep in mind
 1. Udaan asks the same questions for both Intern and FTE postions.
